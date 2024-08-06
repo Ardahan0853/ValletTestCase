@@ -1,0 +1,194 @@
+:root{
+    --bright-body-bg: #E7F0F2;
+    --bright-main-color:#FFFFFF;
+    --bright-green-color:#2DA26E;
+    --bright-border-color:#0083FF;
+    --bright-decline-color:#FE3E3E;
+    --bright-decline-button:#0C1E3D;
+    --bright-wait-color:#FFAD40;
+    --bright-decline-color2:#E27245;
+    --dark-body-bg:#000D26;
+    --dark-main-color:#041938;
+    --dark-green-color:#38CB89;
+    --dark-decline-button:#44587C;
+}
+@font-face {
+    font-family: 'Hellix';
+    src: url('Fonts/hellix/Hellix-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('Fonts/hellix/Hellix-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body{
+    background: var(--bright-body-bg);
+
+}
+
+p{
+    margin: 0;
+    font-family: "Hellix";
+    font-weight: 600;
+}
+
+.main-container{
+    height: 100vh;
+    
+}
+
+.main-content{
+    max-width: 460px;
+    gap: 30px;
+    margin-top: auto;
+    
+}
+
+
+.nutuk-image-div{
+    
+    gap: 30px;
+}
+
+.nutuk-image{
+    
+    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+}
+
+.nutuk-e-kitap-container{
+    
+    border-radius: 16px;
+}
+
+.nutuk-top{
+    background-color: var(--bright-main-color);
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.nutuk-top p{
+    
+    color: var(--bright-decline-button);
+}
+
+.nutuk-bottom{
+    background-color: var(--bright-green-color);
+    height: 40px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    gap: 10px;
+}
+.nutuk-bottom p{
+    color: var(--bright-main-color);
+    font-weight: 400;
+}
+
+
+.kredi-karti, .havale-eft, .mobil-odeme{
+    gap: 5px;
+    cursor: pointer;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+form{
+    gap: 20px;
+    max-width: 460px;
+    padding: 2em 1em;
+}
+
+.options{
+    padding-top: 1.5em;
+    height: 100px;
+    background: var(--bright-body-bg);
+    
+}
+
+.options-div{
+    
+    background-color: var(--bright-main-color);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    
+}
+
+form input{
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--bright-border-color);
+    border-bottom: 6px solid var(--bright-border-color);
+    height: 48px;
+    padding: 2em 3em;
+    
+}
+
+form input:nth-child(1){
+    background-image: url(/images/user-circle.png);
+    background-position: 5% center;
+    background-repeat: no-repeat;
+}
+form input:nth-child(2){
+    background-image: url(/images/credit-card.png);
+    background-position: 5% center;
+    background-repeat: no-repeat;
+}
+form input:nth-child(3){
+    background-image: url(/images/calendar.png);
+    background-position: 5% center;
+    background-repeat: no-repeat;
+    
+}
+
+.bottom-input-2-item input{
+    max-width: 200px;
+    
+}
+.bottom-input-2-item input:nth-child(1){
+    background-image: url(/images/calendar.png);
+    background-position: 10% center;
+    background-repeat: no-repeat;
+}
+.bottom-input-2-item input:nth-child(2){
+    background-image: url(/images/security-password.png);
+    background-position: 10% center;
+    background-repeat: no-repeat;
+}
+
+.bottom-input-2-item{
+    gap: 15px;
+    
+}
+
+input::placeholder{
+    font-family: "Hellix";
+    font-weight: 600;
+}
+
+.options-text-div{
+    height: 60px;
+    background-color: var(--bright-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bright-main-color);
+    
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.options-text-div button{
+    font-family: "Hellix";
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-weight: 600;
+    color: var(--bright-main-color);
+    letter-spacing: 1px;
+}
+
+.bottom-images{
+    margin-top: auto;
+    margin-bottom: 1em;
+}
